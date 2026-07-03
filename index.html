@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/stylesheet/out.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header class="w-full min-h-[70px] md:min-h-[90px] bg-white mx-auto 2xl:container px-4 md:px-6 xl:px-10">
+        <div class="row items-center justify-between flex-nowrap">
+            <div class="flex items-center gap-2 md:hidden shrink-0"><svg
+                    class="w-[35px] h-[35px] text-gray-500 xl:hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" class="w-5 h-5" x stroke="currentColor" className="size-5">
+                    <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                </svg>منو</div>
+            <figure class="w-20 lg:w-24 shrink-0">
+                <img class="w-full h-auto object-contain " src="src/img/1.png" alt="">
+            </figure>
+            <div class="bg-gray-200 hidden md:flex flex-1 mx-6 h-[45px] rounded-3xl  px-3.5 text-gray-500  ">
+                <select
+                    class=" w-full h-full   px-2 py-1 text-sm border-none outline-0 *:text-black *:bg-blue-50 hidden lg:flex">
+                    <option disabled selected>جست و جوی محصولات</option>
+                    <option>برنج ایرانی</option>
+                    <option>برنج خارجی</option>
+                    <option>برنج عطری</option>
+                </select>
+                <input type="text" placeholder="انتخاب دسته بندی "
+                    class="h-full flex-1 px-1 py-1 text-sm border-none outline-0 bg-transparent text-black" />
+
+                <button class=" text-black px-3 rounded-3xl text-sm hover:bg-gray-50 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="flex items-center gap-3 shrink-0">
+                <button class="bg-red-900 text-white px-4 py-2 rounded-4xl flex items-center gap-3  hidden md:flex">
+                    <svg class="w-6 h-6 ><svg xmlns=" http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                    </svg>
+                    </svg>
+                    <span class="text-white hover:text-gray-300 transition">تومان</span>
+                </button>
+
+                <button
+                    class="bg-white text-gray-700 px-4 py-2 rounded-2xl  border-gray-500 flex w-12 h-12 *:scale-200  hover:text-gray-400 transition ">
+                    <svg class=" w-full h-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                        </svg>
+
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <hr class="text-gray-200">
+
+    <section class="w-full mt-10 hidden md:block">
+        <div class="max-w-screen-xl mx-auto flex items-center justify-between gap-6 px-6 lg:px-10">
+
+            <!-- دسته‌بندی -->
+            <button
+                class="bg-amber-900 text-white h-[50px] w-[200px] flex items-center justify-center gap-2 hover:bg-amber-950 transition shrink-0">
+                دسته بندی کالاها
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+                </svg>
+            </button>
+
+            <!-- منو -->
+            <ul class="flex items-center gap-6 lg:gap-10 text-gray-600 text-[15px]">
+
+                <li>
+                    <a class="relative group" href="#">
+                        فروشگاه
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-amber-950 group-hover:w-full transition-all"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="relative group" href="#">
+                        وبلاگ
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-amber-950 group-hover:w-full transition-all"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="relative group" href="#">
+                        درباره ما
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-amber-950 group-hover:w-full transition-all"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="relative group" href="#">
+                        تماس با ما
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-amber-950 group-hover:w-full transition-all"></span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- دکمه خرید -->
+            <button
+                class="bg-amber-900 text-white h-[50px] w-[220px] flex items-center justify-center gap-2 hover:bg-amber-950 transition shrink-0">
+                همین حالا خرید کنید
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+            </button>
+
+        </div>
+    </section>
+    <!-- end  -->
+    <section class="w-full items-center flex flex-col xl:flex-row lg:px-40 px-4 gap-6 overflow-hidden">
+
+        <div class="translate-y-32 -translate-x-28 hidden xl:flex w-1/3 h-[50px]
+        bg-gray-200/45 text-black items-center
+        before:bg-[url('../img/rice-p.png')] before:content-['']
+        before:bg-cover before:w-[55px] before:h-[45px]
+        before:translate-y-[-30px] before:scale-90 before:bg-contain
+        rounded-4xl mt-7 px-3
+        animate-fade-left animate-fade-in-left">
+            99% رضایت مشتری
+        </div>
+
+        <div class="row flex flex-col items-center justify-center
+        w-full xl:w-1/3 h-[350px]
+        *:py-3.5 text-center
+        animate-fade-up animate-fade-in-up">
+
+            <h1 class="lg:text-4xl text-[25px] ps-5">
+                <strong class="text-red-700">وزین</strong>
+                ، انتخاب هوشمند برای یک زندگی سالم
+            </h1>
+
+            <h2 class="lg:text-3xl text-[18px]">
+                سلامتی خود و خانواده‌تان را تضمین کنید
+            </h2>
+
+            <p class="text-[16px] md:text-xl">
+                بهترین و متنوع‌ترین محصولات ارگانیک از برنج و روغن گرفته تا ادویه و خشکبار
+            </p>
+
+            <div class="row justify-center items-center">
+                <img class="w-[50px] h-[50px] " src="src/img/Vector-2.svg" alt="">
+            </div>
+
+        </div>
+
+        <div class="w-full xl:w-1/3 hidden xl:flex
+        h-[50px] translate-y-32 translate-x-28
+        justify-start bg-gray-200/45 items-center
+        rounded-4xl mt-7 px-3.5
+        before:bg-[url('../img/51.png')] before:content-['']
+        before:bg-cover before:w-[60px] before:h-[45px]
+        before:translate-y-[-20px] before:scale-90 before:bg-contain
+        animate-fade-right animate-fade-in-right">
+            100 + محصول متنوع
+        </div>
+
+    </section>
+    <!-- end -->
+    <section class="w-full">
+
+        <div class="row flex flex-col lg:flex-row *:mt-9 gap-10 items-center justify-center px-4 lg:px-0">
+
+            <!-- left box -->
+            <div class="lg:w-[400px] lg:h-[400px] w-full h-auto min-h-[300px]
+            bg-amber-800/20 rounded-4xl
+            flex flex-col gap-4 items-center justify-center
+            p-5
+            animate-fade-in-left">
+
+                <p class="text-black/50 px-3.5 text-center leading-7">
+                    بهترین و متنوع‌ترین محصولات ارگانیک از برنج و روغن گرفته تا ادویه و خشکبار، همه و همه با تضمین کیفیت
+                    در فروشگاه وزین...
+                </p>
+
+                <div class="row flex justify-center">
+                    <a class="btnred" href="">رفتن به فروشگاه
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="row flex flex-col sm:flex-row justify-evenly gap-6 w-full text-center">
+                    <div class="flex flex-col gap-2">
+                        <span>ارسال سریع</span>
+                        <span>برای انواع خریدها</span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span>ارسال محصولات</span>
+                        <span>فروشگاه وزین تضمین</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- right banner -->
+            <div class="w-full md:w-[750px] min-w-0 lg:w-[750px] h-[300px] lg:h-[400px]
+            bg-[url('../img/14.webp')] bg-cover bg-center
+            rounded-4xl flex flex-col items-end justify-center
+            px-6 lg:px-16 gap-4
+            animate-fade-in-right">
+
+                <h1 class="text-2xl md:text-4xl lg:text-5xl text-white">عسل طبیعی</h1>
+
+                <p class="hidden md:block text-xl text-white md:max-w-[200px] leading-7 text-right">
+                    از دل کندوهای بکر ایران
+                </p>
+
+                <div class="row flex justify-end w-full">
+                    <a class="btnred" href="">خرید عسل
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- categories -->
+        <div class="w-full mt-5 xl:h-[300px]">
+
+            <div class="row flex flex-wrap gap-5 items-center justify-center mx-auto px-4 py-6">
+
+                <figure
+                    class="w-[150px] sm:w-[200px] h-[200px] relative hover:bg-red-800 flex items-center justify-center rounded-4xl duration-300 hover:text-white">
+                    <img class="w-[100px] sm:w-[120px] h-[100px] sm:h-[120px] object-cover rounded-full"
+                        src="src/img/Category10-1.webp">
+                    <figcaption class="absolute top-[160px] sm:top-[170px]">عسل</figcaption>
+                </figure>
+
+                <figure
+                    class="w-[150px] sm:w-[200px] h-[200px] relative hover:bg-red-800 flex items-center justify-center rounded-4xl duration-300 hover:text-white">
+                    <img class="w-[100px] sm:w-[120px] h-[100px] sm:h-[120px] object-cover rounded-full"
+                        src="src/img/Category9-1.webp">
+                    <figcaption class="absolute top-[160px] sm:top-[170px]">روغن</figcaption>
+                </figure>
+
+                <figure
+                    class="w-[150px] sm:w-[200px] h-[200px] relative hover:bg-red-800 flex items-center justify-center rounded-4xl duration-300 hover:text-white">
+                    <img class="w-[100px] sm:w-[120px] h-[100px] sm:h-[120px] object-cover rounded-full"
+                        src="src/img/Category8.webp">
+                    <figcaption class="absolute top-[160px] sm:top-[170px]">عرقیجات</figcaption>
+                </figure>
+
+                <figure
+                    class="w-[150px] sm:w-[200px] h-[200px] relative hover:bg-red-800 flex items-center justify-center rounded-4xl duration-300 hover:text-white">
+                    <img class="w-[100px] sm:w-[120px] h-[100px] sm:h-[120px] object-cover rounded-full"
+                        src="src/img/Category2.webp">
+                    <figcaption class="absolute top-[160px] sm:top-[170px]">سس</figcaption>
+                </figure>
+
+                <figure
+                    class="w-[150px] sm:w-[200px] h-[200px] relative hover:bg-red-800 flex items-center justify-center rounded-4xl duration-300 hover:text-white">
+                    <img class="w-[100px] sm:w-[120px] h-[100px] sm:h-[120px] object-cover rounded-full"
+                        src="src/img/Category6.webp">
+                    <figcaption class="absolute top-[160px] sm:top-[170px]">ادویه</figcaption>
+                </figure>
+
+                <figure
+                    class="w-[150px] sm:w-[200px] h-[200px] relative hover:bg-red-800 flex items-center justify-center rounded-4xl duration-300 hover:text-white">
+                    <img class="w-[100px] sm:w-[120px] h-[100px] sm:h-[120px] object-cover rounded-full"
+                        src="src/img/Category7.webp">
+                    <figcaption class="absolute top-[160px] sm:top-[170px]">حبوبات</figcaption>
+                </figure>
+
+            </div>
+
+        </div>
+        <!-- end  -->
+        <section class="w-full mt-10 md:mt-4 lg:px-28 px-4">
+
+            <div class="row flex flex-col lg:flex-row gap-10 items-center justify-center lg:justify-center">
+
+                <figure class="xl:w-[600px] xl:h-[250px] relative w-full h-[300px] mt-5">
+                    <img class="w-full h-full rounded-4xl object-cover" src="src/img/22.webp" alt="">
+
+                    <figcaption
+                        class="absolute top-[60px] left-[30px] w-[80%] md:w-[300px] text-white text-2xl text-left md:text-right rtl:text-right">
+                        روغن طبیعی وزین
+                    </figcaption>
+
+                    <figcaption
+                        class="absolute top-[110px] left-[30px] w-[80%] md:w-[300px] text-white text-[14px] md:text-[16px] text-left md:text-right rtl:text-right">
+                        تهیه شده از مواد تازه و بدون افزودنی
+                    </figcaption>
+                </figure>
+
+                <figure class="xl:w-[600px] xl:h-[250px] relative w-full h-[300px] mt-5 lg:ml-6">
+                    <img class="w-full h-full rounded-4xl object-cover" src="src/img/222.webp" alt="">
+
+                    <figcaption
+                        class="absolute top-[60px] left-[30px] w-[80%] md:w-[300px] text-white text-2xl md:text-3xl text-left md:text-right rtl:text-right">
+                        عرقیجات گیاهی وزین
+                    </figcaption>
+
+                    <figcaption
+                        class="absolute top-[110px] left-[30px] w-[80%] md:w-[300px] text-white text-[14px] md:text-[16px] text-left md:text-right rtl:text-right">
+                        تقطیر شده از گیاهان تازه و بدون اساس
+                    </figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+        <!-- end  -->
+        <section class="w-full   mx-auto xl:px-28 0 lg:ps-0 mt-20 px-4 sm:px-6 lg:px-10 xl:px-28">
+            <div class="row justify-center items-center ">
+                <div class="xl:w-1/3 h-[400px] flex flex-col justify-center Samim-Bold-FD.ttf  w-full">
+                    <h2 class=""><strong class="text-red-800 text-3xl">محبوب</strong> از نگاه شما</h2>
+                    <p class="lg:text-3xl lg:w-[500px] text-2xl mb-2.5">محبوب‌ترین محصولات فروشگاه <strong
+                            class="text-red-700 ">وزین</strong></p>
+                    <div
+                        class="w-full h-[270px] xl:w-[350px] xl:h-[270px] bg-[url('../img/bkg-popular.png')] bg-cover flex flex-col justify-center items-center rounded- *:text-white *:text-2xl gap-3 ">
+                        <p>محبوب‌ترین برنج‌ها</p>
+                        <p class="bg-gray-300/35 rounded-2xl w-[220px] h-[35px] text-center ">محبوب‌ترین ادویه‌ها</p>
+                        <p>محبوب‌ترین چای‌ها</p>
+                    </div>
+
+                </div>
+                <div class="lg:w-1/3 flex flex-col  ">
+                    <div class="w-full  ">
+                        <div class=" w-[400px] h-[100px] bg-white shadow-2xl shadow-black rounded-2xl my-3 ">
+                            <figure class="w-[80px] h-[70px] relative py-3 mx-2 ">
+                                <img class="object-cover w-[80px] h-[70px] rounded-3xl    " src="src/img/a1.jpg" alt="">
+                                <figcaption class=" text-[18px] absolute top-[10px] right-[100px]">زردچوبه</figcaption>
+                                <figcaption
+                                    class="text-gray-400 text-[12px] w-[120px] absolute top-[40px] right-[100px]">
+                                    4.5
+                                    (62 رای)
+                                </figcaption>
+                                <figcaption class="  absolute top-[40px] right-[300px]">390.000</figcaption>
+                                <figcaption class="  absolute top-[65px] right-[300px]">تومان</figcaption>
+                            </figure>
+                            <div class="w-[400px] h-[100px] mt-10   rounded-2xl bg-white shadow-2xl shadow-black">
+                                <figure class="w-[80px] h-[70px] relative py-3 mx-2 ">
+                                    <img class="object-cover w-[80px] h-[70px] rounded-3xl    " src="src/img/a2.jpg"
+                                        alt="">
+                                    <figcaption class="w-[100px] absolute top-[10px] right-[100px]">فلفل سیاه
+                                    </figcaption>
+                                    <figcaption
+                                        class="text-gray-400 text-[12px] w-[120px] absolute top-[40px] right-[100px]">
+                                        4.6
+                                        (28 رای)
+                                    </figcaption>
+                                    <figcaption class="  absolute top-[40px] right-[300px]">590.000</figcaption>
+                                    <figcaption class="  absolute top-[65px] right-[300px]">تومان</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="lg:w-1/3 flex flex-col mt-36 lg:mt-0 mx-16 lg:mx-24 xl:mx-0  ">
+                    <div class="w-full">
+                        <div class=" w-[400px] h-[100px] bg-white shadow-2xl shadow-black rounded-2xl my-3">
+                            <figure class="w-[80px] h-[70px] relative py-3 mx-2 ">
+                                <img class="object-cover w-[80px] h-[70px] rounded-3xl    " src="src/img/a3.jpg" alt="">
+                                <figcaption class="w-[100px] absolute top-[10px] right-[100px]">فلفل قرمز</figcaption>
+                                <figcaption
+                                    class="text-gray-400 text-[12px] w-[120px] absolute top-[40px] right-[100px]">
+                                    4.5
+                                    (15 رای)
+                                </figcaption>
+                                <figcaption class="  absolute top-[40px] right-[300px]">390.000</figcaption>
+                                <figcaption class="  absolute top-[65px] right-[300px]">تومان</figcaption>
+                            </figure>
+
+
+                            <div class="w-[400px] h-[100px] mt-10   rounded-2xl bg-white shadow-2xl shadow-black">
+                                <figure class="w-[80px] h-[70px] relative py-3 mx-2 ">
+                                    <img class="object-cover w-[80px] h-[70px] rounded-3xl    " src="src/img/a4.jpg"
+                                        alt="">
+                                    <figcaption class=" absolute top-[10px] right-[100px]">پاپریکا</figcaption>
+                                    <figcaption
+                                        class="text-gray-400 text-[12px] w-[120px] absolute top-[40px] right-[100px]">5
+                                        (16 رای)
+                                    </figcaption>
+                                    <figcaption class=" number-fa absolute top-[40px] right-[300px]">290.000
+                                    </figcaption>
+                                    <figcaption class="  absolute top-[65px] right-[300px]">تومان</figcaption>
+
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end  -->
+        <section class="w-full mt-32">
+            <div class="row justify-between px-4 md:px-28 gap-6 ">
+
+                <figure
+                    class="w-full md:w-[48%] xl:w-[600px] xl:h-[250px] relative h-[300px] mt-5 overflow-hidden rounded-4xl">
+                    <img class="w-full h-full object-cover" src="src/img/ad.webp" alt="">
+
+                    <figcaption
+                        class="absolute top-[60px] left-[20px] md:left-[30px] w-[250px] md:w-[300px] text-white text-2xl md:text-3xl">
+                        ادویه‌های اصیل وزین
+                    </figcaption>
+
+                    <figcaption
+                        class="absolute top-[110px] left-[20px] md:left-[30px] w-[250px] md:w-[300px] text-white text-sm md:text-[16px]">
+                        از بهترین ادویه‌های تازه و مرغوب
+                    </figcaption>
+                </figure>
+
+                <figure
+                    class="w-full md:w-[48%] xl:w-[600px] xl:h-[250px] relative h-[300px] mt-5 overflow-hidden rounded-4xl">
+                    <img class="w-full h-full object-cover" src="src/img/ad2.webp" alt="">
+
+                    <figcaption
+                        class="absolute top-[60px] left-[20px] md:left-[30px] w-[250px] md:w-[300px] text-white text-2xl md:text-3xl">
+                        خشکبار وزین
+                    </figcaption>
+
+                    <figcaption
+                        class="absolute top-[110px] left-[20px] md:left-[30px] w-[250px] md:w-[300px] text-white text-sm md:text-[16px]">
+                        محصولات باکیفیت و خوش‌طعم
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+        <!-- end  -->
+        <footer class="w-full mt-20 px-4 sm:px-6 lg:px-0 mt-32">
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-6 max-w-7xl mx-auto">
+                <div class="w-[400px] h-[450px] bg-[#A38342] rounded-3xl mt-5 ">
+                    <div class="row justify-center ">
+                        <figure class="w-[100px] h-[100px]">
+                            <img src="src/img/1.png" alt="">
+                        </figure>
+                        <span class="w-full text-gray-200 px-4 ">راه های ارتباطی ما :</span>
+                        <div class="w-[350px] h-[180px] mt-5 rounded-3xl bg-[#BA9855]">
+                            <p class="text-white text-center mt-3.5">شماره تماس با تیم پشتیبانی ما</p>
+                            <p class="text-white text-center mt-3.5">021-22381360 021-22381460</p>
+                            <hr class="border border-dashed mt-3.5 text-amber-50/35">
+                            <p class="text-[14px] text-white text-center mt-5">آدرس: سعادت آباد، میدان کتاب، بين بلوار
+                                کوهستان (منفردنیاکی) و طاهرخاني، خیابان صحرا جنوبی، فروشگاه وزین</p>
+                        </div>
+                        <p class="w-full  text-white my-3 px-4">همراه ما باشید</p>
+                        <div class="w-[350px] bg-[#BA9855] h-[70px]  rounded-3xl ">
+                            <div
+                                class="row items-center content-center justify-items-center-safe justify-center mt-3 gap-3">
+                                <svg class="hover:-translate-y-1 duration-300 w-[50px] h-[50px] py-3 rounded-4xl bg-red-800/75 text-amber-50 "
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.1835 1.41016L12.1822 1.41016C9.09012 1.43158 6.70036 2.47326 5.09369 4.51569C3.66581 6.33087 2.93472 8.86436 2.91016 12.0068V12.0082C2.93472 15.1508 3.66586 17.6696 5.09369 19.4847C6.70043 21.5271 9.10257 22.5688 12.1946 22.5902H12.1958C14.944 22.5711 16.8929 21.8504 18.4985 20.2463C20.6034 18.1434 20.5408 15.5048 19.8456 13.8832C19.3163 12.6493 18.2709 11.6618 16.8701 11.0477C16.6891 8.06345 15.0097 6.32178 12.2496 6.30415C10.6191 6.29409 9.14792 7.02378 8.24685 8.39104L9.90238 9.5267C10.4353 8.71818 11.2789 8.32815 12.2371 8.33701C13.6244 8.34586 14.5362 9.11128 14.7921 10.4541C14.02 10.3333 13.1902 10.2982 12.3076 10.3488C9.66843 10.5008 7.9399 12.061 8.05516 14.2244C8.17571 16.4862 10.367 17.7186 12.4476 17.605C14.9399 17.4684 16.4209 15.6292 16.7722 13.2836C17.3493 13.6575 17.7751 14.1344 18.0163 14.6969C18.4559 15.7222 18.4838 17.4132 17.1006 18.7952C15.8838 20.0108 14.4211 20.5407 12.1891 20.5572C9.71428 20.5388 7.85698 19.746 6.65154 18.2136C5.51973 16.7748 4.92843 14.6882 4.90627 12.0002C4.92843 9.31211 5.51973 7.22549 6.65154 5.78673C7.85698 4.25433 9.71424 3.46156 12.189 3.44303C14.6819 3.4617 16.5728 4.25837 17.8254 5.79937C18.5162 6.64934 18.949 7.66539 19.2379 8.71407L21.1776 8.19656C20.8148 6.85917 20.2414 5.58371 19.363 4.50305C17.7098 2.46918 15.2816 1.43166 12.1835 1.41016ZM12.4204 12.3782C13.3044 12.3272 14.1239 12.3834 14.8521 12.5345C14.7114 14.1116 14.0589 15.4806 12.3401 15.575C11.2282 15.6376 10.1031 15.1413 10.0484 14.114C10.0077 13.3503 10.5726 12.4847 12.4204 12.3782Z">
+                                    </path>
+                                </svg>
+                                <svg class="hover:-translate-y-1 duration-300 w-[50px] h-[50px] py-3 rounded-4xl bg-red-800/75 text-amber-50"
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z">
+                                    </path>
+                                </svg>
+
+                                <svg class="hover:-translate-y-1 duration-300 w-[50px] h-[50px] py-3 rounded-4xl bg-red-800/75 text-amber-50"
+                                    xmlns="<svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M17.0943 7.14643C17.6874 6.93123 17.9818 6.85378 18.1449 6.82608C18.1461 6.87823 18.1449 6.92051 18.1422 6.94825C17.9096 9.39217 16.8906 15.4048 16.3672 18.2026C16.2447 18.8578 16.1507 19.1697 15.5179 18.798C15.1014 18.5532 14.7245 18.2452 14.3207 17.9805C12.9961 17.1121 11.1 15.8189 11.2557 15.8967C9.95162 15.0373 10.4975 14.5111 11.2255 13.8093C11.3434 13.6957 11.466 13.5775 11.5863 13.4525C11.64 13.3967 11.9027 13.1524 12.2731 12.8081C13.4612 11.7035 15.7571 9.56903 15.8151 9.32202C15.8246 9.2815 15.8334 9.13045 15.7436 9.05068C15.6539 8.97092 15.5215 8.9982 15.4259 9.01989C15.2904 9.05064 13.1326 10.4769 8.95243 13.2986C8.33994 13.7192 7.78517 13.9242 7.28811 13.9134L7.29256 13.9156C6.63781 13.6847 5.9849 13.4859 5.32855 13.286C4.89736 13.1546 4.46469 13.0228 4.02904 12.8812C3.92249 12.8466 3.81853 12.8137 3.72083 12.783C8.24781 10.8109 11.263 9.51243 12.7739 8.884C14.9684 7.97124 16.2701 7.44551 17.0943 7.14643ZM19.5169 5.21806C19.2635 5.01244 18.985 4.91807 18.7915 4.87185C18.5917 4.82412 18.4018 4.80876 18.2578 4.8113C17.7814 4.81969 17.2697 4.95518 16.4121 5.26637C15.5373 5.58382 14.193 6.12763 12.0058 7.03736C10.4638 7.67874 7.39388 9.00115 2.80365 11.001C2.40046 11.1622 2.03086 11.3451 1.73884 11.5619C1.46919 11.7622 1.09173 12.1205 1.02268 12.6714C0.970519 13.0874 1.09182 13.4714 1.33782 13.7738C1.55198 14.037 1.82635 14.1969 2.03529 14.2981C2.34545 14.4483 2.76276 14.5791 3.12952 14.6941C3.70264 14.8737 4.27444 15.0572 4.84879 15.233C6.62691 15.7773 8.09066 16.2253 9.7012 17.2866C10.8825 18.0651 12.041 18.8775 13.2243 19.6531C13.6559 19.936 14.0593 20.2607 14.5049 20.5224C14.9916 20.8084 15.6104 21.0692 16.3636 20.9998C17.5019 20.8951 18.0941 19.8479 18.3331 18.5703C18.8552 15.7796 19.8909 9.68351 20.1332 7.13774C20.1648 6.80544 20.1278 6.433 20.097 6.25318C20.0653 6.068 19.9684 5.58448 19.5169 5.21806Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w-full max-w-[750px] h-[450px] bg-[#993D3D] rounded-3xl flex flex-col items-center mt-5  ">
+
+                    <div class="bg-[url('../img/footer-up-bkg.png')] bg-cover bg-top w-[250px] h-[100px] z-20 ">
+                        <svg class="hover:-translate-y-2.5 duration-300 w-[45px] h-[45px] bg-[#993D3D] text-gray-100 rounded-4xl mx-[102px] py-2 -my-3.5"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M13.0001 7.82843V20H11.0001V7.82843L5.63614 13.1924L4.22192 11.7782L12.0001 4L19.7783 11.7782L18.3641 13.1924L13.0001 7.82843Z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <p class="mt-4 text-white *:text-2xl font-bold ">دسترسی سریع</p>
+                    <ul
+                        class="rrow w-[500px]  px-14 gap-x-10 text-[16px]  items-center justify-center mt-11 text-gray-200  ">
+                        <li class="group"><a href="" class="group-hover:scale-110 duration-300 block  " href="">نمک</a>
+                        </li>
+                        <li class="group"><a href="" class="group-hover:scale-110 duration-300 block ">عسل</a></li>
+                        <li class="group"><a href="" class="group-hover:scale-110 duration-300 block">ادویه</a></li>
+                        <li class="group"><a href="" class="group-hover:scale-110 duration-300 block">برنج</a></li>
+                        <li class="group"><a href="" class="group-hover:scale-110 duration-300 block">حبوبات</a></li>
+                        <li class="group"><a href="" class="group-hover:scale-110 duration-300 block">روغن</a></li>
+                        <li class="group"><a href="" class="group-hover:scale-110 duration-300 block">سس</a></li>
+                        <li class="group"><a href="" class="group-hover:scale-110 duration-300 block">عرقیجات</a></li>
+                        <li class="group"><a href="" class="group-hover:scale-110 duration-300 block">چای</a></li>
+                        <li class="group"><a href="" class="group-hover:scale-110 duration-300 block">خشکبار</a></li>
+                    </ul>
+                    <div
+                        class="md:w-[600px] w-[400px] h-[100px] bg-gray-100/30 mt-5 flex items-center rounded-4xl flex justify-between ">
+                        <input class="outline-0 border-0 px-3.5 " type="text" placeholder="نماد های اعتماد">
+                        <img class="w-[100px] h-[80px] px-3.5" src="src/img/logo.png" alt="">
+                    </div>
+                    <p class="mt-3 text-gray-200/70 text-[14px]">تمامی حقوق این وبسایت برای فروشگاه وزین محفوظ است</p>
+
+                </div>
+            </div>
+
+            <section class="relative mt-10 overflow-hidden rounded-t-[90px]">
+
+                <div class="relative z-10 flex justify-center pt-20 pb-12">
+
+                    <div class="group relative
+            w-[340px]
+            sm:w-[420px]
+            lg:w-[80%]
+            lg:max-w-[1200px]
+            mx-auto
+
+            rounded-[40px]
+           bg-[#640606] 
+            backdrop-blur-3xl
+            border border-amber-300/15
+            shadow-[0_30px_90px_rgba(0,0,0,.45)]
+            overflow-hidden
+            transition-all duration-500
+            hover:-translate-y-2
+            hover:border-amber-300/40">
+
+                        <div class="absolute inset-0">
+
+                            <div class="absolute left-1/2 top-1/2
+                    -translate-x-1/2 -translate-y-1/2
+                    w-[650px] h-[650px]
+                    bg-amber-400/10
+                    blur-[170px]
+                    rounded-full
+                    group-hover:bg-amber-300/20
+                    duration-500">
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-amber-400/15 to-transparent">
+                        </div>
+
+                        <div class="relative
+                flex flex-col lg:flex-row
+                items-center
+                justify-center
+                gap-12 lg:gap-36
+                px-8 sm:px-12 lg:px-24
+                py-14">
+
+
+                            <div class="relative flex justify-center items-center shrink-0">
+
+                                <div class="absolute w-72 h-72 rounded-full bg-amber-300/5 blur-3xl"></div>
+
+                                <div class="absolute w-56 h-56 rounded-full border border-amber-300/30 animate-pulse">
+                                </div>
+
+                                <div class="absolute w-48 h-48 rounded-full border border-white/10"></div>
+
+                                <img src="src/img/narges.png" class="relative z-10
+                        w-44 h-44
+                        lg:w-52 lg:h-52
+                        rounded-full
+                        object-cover
+                        border-[7px]
+                        border-amber-300
+                        shadow-[0_0_70px_rgba(251,191,36,.45)]
+                        transition-all duration-500
+                        group-hover:scale-105
+                        group-hover:rotate-1">
+
+                            </div>
+
+
+                            <div dir="rtl" class="max-w-xl w-full text-center lg:text-right">
+
+                                <h2 class="text-4xl lg:text-5xl font-black text-white tracking-wide">
+                                    نرگس توحیدلو
+                                </h2>
+
+                                <p
+                                    class="text-base md:text-xl text-amber-400 md:w-[240px] w-full leading-7 text-right break-words mt-2.5">
+                                    علاقه‌مند به فرانت‌اند </p>
+
+
+
+                                <div class="w-full h-[2px] bg-amber-300/40 rounded-full my-8"></div>
+
+                                <!-- Email -->
+
+                                <a href="mailto:naarges.tohidloo@gmail.com" dir="ltr"
+                                    class="group/link flex items-center justify-center lg:justify-start gap-4 text-gray-300 hover:text-amber-300 duration-300">
+
+                                    <div
+                                        class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
+
+                                        <i class="bi bi-envelope-fill text-lg"></i>
+
+                                    </div>
+
+                                    <span class="group-hover/link:translate-x-1 transition-transform duration-300">
+                                        naarges.tohidloo@gmail.com
+                                    </span>
+
+                                </a>
+
+
+                                <a href="https://github.com/nargestohidloo" target="_blank" dir="ltr"
+                                    class="mt-5 group/link flex items-center justify-center lg:justify-start gap-4 text-gray-300 hover:text-white duration-300">
+
+
+                                    <div
+                                        class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
+                                        <i class="bi bi-github text-xl"></i>
+
+                                    </div>
+
+                                    <span
+                                        class="text-sm sm:text-base group-hover/link:translate-x-1 transition-transform duration-300">
+                                        github.com/nargestohidloo
+                                    </span>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="relative z-10 border-t border-white/10 py-8">
+
+                    <p class="text-center text-gray-400 text-sm tracking-wide">
+
+                        Designed & Developed with
+                        <span class="text-red-400">❤</span>
+                        by
+                        <span class="text-amber-300 font-semibold">
+                            Narges Tohidloo
+                        </span>
+
+                        <span class="hidden sm:inline">
+                            · © 2026 All Rights Reserved
+                        </span>
+                    </p>
+
+                </div>
+
+            </section>
+        </footer>
+</body>
+
+</html>
