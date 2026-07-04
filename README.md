@@ -1,19 +1,20 @@
 # ✨ Vazin — Responsive Website
 
-A modern, fully responsive website crafted with **HTML5**, **CSS3**, and **Tailwind CSS**.
-This project focuses on delivering a clean user interface, smooth responsiveness, and an optimized browsing experience across all devices.
+A modern and fully responsive landing page built with **HTML5**, **CSS3**, and **Tailwind CSS**.
+
+Designed with a clean user interface, smooth responsiveness, and an optimized user experience across desktop, tablet, and mobile devices.
 
 ---
 
-## 🚀 Highlights
+## 🚀 Features
 
-* 📱 Fully Responsive Design
-* 🎨 Modern & Elegant User Interface
-* ⚡ Fast & Lightweight
-* 💻 Desktop, Tablet & Mobile Optimized
-* 🧩 Built with Semantic HTML5
-* 🎯 Utility-First Styling using Tailwind CSS
-* ✨ Clean, Maintainable & Scalable Code
+- 📱 Fully Responsive Layout
+- 🎨 Modern & Clean UI
+- ⚡ Optimized Performance
+- 📐 Mobile-First Design
+- 🧩 Semantic HTML5 Structure
+- 🎯 Built with Tailwind CSS
+- ♻️ Reusable & Maintainable Code
 
 ---
 ## 📸 Project Preview
