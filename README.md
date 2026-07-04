@@ -26,7 +26,7 @@ Designed with a clean user interface, smooth responsiveness, and an optimized us
 ## 💻 Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,tailwind,vscode,git,github" />
+  <img src="https://skillicons.dev/icons?i=html,css,tailwind,vscode,github" />
 </p>
 
 ---
@@ -34,19 +34,6 @@ Designed with a clean user interface, smooth responsiveness, and an optimized us
 ## 🌐 Live Demo
 
 🔗 **https://nargestohidloo.github.io/Vazin-responsive-website/**
-
----
-
-## 📂 Project Structure
-
-```text
-Vazin/
-├── assets/
-│   ├── images/
-│   └── icons/
-├── index.html
-├── README.md
-```
 
 ---
 
